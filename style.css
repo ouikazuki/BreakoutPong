@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    background-color: #2c3e50;
+    margin: 0;
+    color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+}
+
+#board {
+    background-color: #2c3e50;
+    border-top: 5px solid #3498db;
+    border-left: 5px solid #3498db;
+    border-right: 5px solid #3498db;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+}
+
+#board::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#brick-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.brick {
+    width: 40px;
+    height: 20px;
+    background-color: #27ae60;
+    border: 1px solid #2ecc71;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.8);
+    margin: 5px;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
+    animation: bounce 1s infinite alternate, rotate 3s linear infinite;
+}
